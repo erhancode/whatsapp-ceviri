@@ -1,0 +1,18 @@
+:root{color-scheme:light dark;--bg:#fff;--fg:#1b1b1b;--mut:#6b7280;--bd:#d6d9de;--ac:#128c7e}
+@media(prefers-color-scheme:dark){:root{--bg:#111b21;--fg:#e9edef;--mut:#8696a0;--bd:#2a3942}}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 60px}
+h1{font-size:22px;margin:0 0 6px}h2{font-size:15px;margin:22px 0 8px}
+.muted{color:var(--mut);font-size:12.5px;line-height:1.45}
+section{border-top:1px solid var(--bd);margin-top:14px;padding-top:2px}
+label{display:block;margin:10px 0;font-size:13px}
+label.row,.row{display:flex;gap:8px;align-items:center;margin:10px 0}
+select,input[type=text],input[type=password],input[type=url]{width:100%;box-sizing:border-box;padding:7px 9px;margin-top:4px;border:1px solid var(--bd);border-radius:6px;background:transparent;color:inherit;font:inherit}
+select option{color:#111}
+.prov{border:1px solid var(--bd);border-radius:8px;padding:10px 12px;margin:10px 0}
+.prov .g{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.prov .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+button{cursor:pointer;padding:6px 12px;border:1px solid var(--bd);border-radius:6px;background:transparent;color:inherit;font:inherit}
+button.primary{background:var(--ac);border-color:var(--ac);color:#fff}
+.ok{color:#128c7e}.bad{color:#e53935}
+code{background:rgba(127,127,127,.18);padding:1px 5px;border-radius:4px}

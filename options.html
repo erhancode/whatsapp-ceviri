@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><title>WhatsApp Çevirmen — Ayarlar</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="options.css"></head>
+<body>
+<main>
+  <h1>🌐 WhatsApp Çevirmen</h1>
+  <p class="muted">web.whatsapp.com'da sohbetin sağ üstündeki <b>🌐 Çeviri</b> düğmesiyle açılır/kapanır. Gelen yabancı mesajlarda <b>Çevir</b> bağlantısı çıkar; yazdığın mesaj önizlemeyle karşı tarafın diline çevrilip gönderilir. Uzantıyı ilk kurduktan sonra WhatsApp sekmesini bir kez F5 ile yenile.</p>
+
+  <section>
+    <h2>Çeviri</h2>
+    <label>Benim dilim (gelen mesajlar buna çevrilir) <select id="target"></select></label>
+    <label>Çeviri motoru
+      <select id="engine">
+        <option value="auto">AI modeli; olmazsa Chrome dahili çeviri</option>
+        <option value="router">Yalnızca AI modeli</option>
+        <option value="chrome">Yalnızca Chrome dahili çeviri (Farsça vb. desteklenmeyebilir)</option>
+      </select></label>
+    <label class="row"><input id="defaultOn" type="checkbox"> Yeni sohbetlerde çeviri varsayılan AÇIK olsun</label>
+    <label class="row"><input id="auto" type="checkbox"> Gelen mesajları otomatik çevir (düğmeye basmadan)</label>
+    <label class="row"><input id="enterSend" type="checkbox"> WhatsApp'ta Enter gönderiyor (kapalıysa önizleme Ctrl+Enter ile açılır)</label>
+  </section>
+
+  <section>
+    <h2>AI modelleri (OpenAI uyumlu)</h2>
+    <p class="muted">Sırayla denenir: ilki ana, diğerleri yedek. Mesaj metni bu adreslere gönderilir (9router için yerel adres: <code>http://localhost:20128/v1</code>). API anahtarı kodda kayıtlı değildir; her model için elle girilir.</p>
+    <div id="provs"></div>
+    <div class="row"><button id="add" type="button">＋ Model ekle</button></div>
+  </section>
+
+  <div class="row"><button id="save" class="primary" type="button">Kaydet</button><span id="msg" class="muted"></span></div>
+</main>
+<script type="module" src="options.js"></script>
+</body></html>

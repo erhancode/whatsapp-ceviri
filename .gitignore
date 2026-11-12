@@ -1,0 +1,19 @@
+# İşletim sistemi / editör
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Yerel paket ve test çıktıları
+*.zip
+*.crx
+*.pem
+node_modules/
+dist/
+
+# Yerel ayar / anahtar dosyaları (asla commit edilmez)
+.env
+.env.*
+*.key
+secrets.*

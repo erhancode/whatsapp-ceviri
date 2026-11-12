@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Çevirmen",
+  "version": "1.1.0",
+  "description": "WhatsApp Web'de gelen mesajları tek tıkla (ya da otomatik) çevirir; yazdığını önizlemeyle karşı tarafın diline çevirip gönderir. 9router/AI modelleri ya da Chrome dahili çeviri.",
+  "minimum_chrome_version": "138",
+  "permissions": [
+    "storage",
+    "debugger"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "WhatsApp Çevirmen ayarları"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.whatsapp.com/*"
+      ],
+      "js": [
+        "wa-translate.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
