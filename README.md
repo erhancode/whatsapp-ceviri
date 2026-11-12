@@ -6,6 +6,12 @@ web.whatsapp.com üzerinde çalışan, **tamamen ücretsiz** bir çeviri uzantı
 
 > **Ücretsiz.** Ücretli sürüm, abonelik, hesap veya kendi sunucumuz yok. Kendi API anahtarını eklersen daha iyi çeviri alırsın; anahtar eklemezsen Chrome'un cihaz içi çevirisiyle çalışır (bkz. [Hangi motoru seçmeliyim?](#hangi-motoru-seçmeliyim)).
 
+## Tanıtım videosu
+
+[![Tanıtım videosunu izle](docs/demo-poster.png)](https://github.com/erhancode/whatsapp-ceviri/blob/main/docs/demo.mp4)
+
+▶ [Videoyu izle (65 sn, sesli)](https://github.com/erhancode/whatsapp-ceviri/blob/main/docs/demo.mp4) · [docs/demo.mp4](docs/demo.mp4)
+
 ## Ne yapar
 
 - **Gelen mesaj:** Yabancı dildeki mesajın altında **🌐 Çevir** bağlantısı çıkar; tıklayınca çeviri orijinalin hemen altında görünür. *Otomatik çevir* açıksa son ~15 mesaj kendiliğinden çevrilir. Sayfa yenilenmez, mesajın kendisi değiştirilmez.
@@ -65,7 +71,7 @@ Uzantının kendi sunucusu, analitiği veya izlemesi yoktur. Mesaj metni yalnız
 | `translate-bg.js` | AI sağlayıcı çağrısı ve istem (prompt) yönetimi |
 | `options.html/css/js` | Ayarlar sayfası |
 
-Derleme adımı, `package.json` veya bağımlılık yok — düz JavaScript.
+Derleme adımı, `package.json` veya bağımlılık yok — düz JavaScript. Tanıtım videosu: `docs/demo.mp4`.
 
 ## Bilinen sınırlar
 

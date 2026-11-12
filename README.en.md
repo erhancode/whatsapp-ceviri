@@ -6,6 +6,12 @@ A **completely free** translation extension for web.whatsapp.com. It translates 
 
 > **Free.** No paid tier, no subscription, no account, no server of ours. Add your own API key for better translations; without a key it runs on Chrome's on-device translation (see [Which engine should I use?](#which-engine-should-i-use)).
 
+## Demo video
+
+[![Watch the demo](docs/demo-poster.png)](https://github.com/erhancode/whatsapp-ceviri/blob/main/docs/demo.mp4)
+
+▶ [Watch the video (65 s, with sound)](https://github.com/erhancode/whatsapp-ceviri/blob/main/docs/demo.mp4) · [docs/demo.mp4](docs/demo.mp4)
+
 ## What it does
 
 - **Incoming messages:** every foreign-language message gets a small **🌐 Translate** link. Click it and the translation appears right below the original. With *auto-translate* on, the last ~15 messages are translated automatically. The page is never reloaded and the original message is never modified.
